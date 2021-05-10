@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "656624817225",
+    "project_id": "flashchat-u1",
+    "storage_bucket": "flashchat-u1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656624817225:android:c09c60c2f9156d161b9b98",
+        "android_client_info": {
+          "package_name": "co.ardiriz.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656624817225-ij5vs7kqespse4b1pmro53srd94u5d87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxloun5Xlb3YOVMknPvXLGgnVY78S4oUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656624817225-ij5vs7kqespse4b1pmro53srd94u5d87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
