@@ -16,7 +16,7 @@ class ButtonWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
       child: Material(
-        color: color,
+        color: onNavigate != null ? color : Colors.grey,
         borderRadius: BorderRadius.circular(30.0),
         elevation: 5.0,
         child: MaterialButton(

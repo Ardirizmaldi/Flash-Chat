@@ -27,6 +27,29 @@ class FormValidation {
     }
   }
 
+  static Future validateLoginForm({
+    FormState form,
+    String email,
+    String passsword,
+    BuildContext context,
+  }) async {
+    if (form.validate()) {
+      try {
+        final user = await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: email,
+          password: passsword,
+        );
+        if (user != null) {
+          Navigator.pushReplacementNamed(context, RouteList.chatScreen);
+        }
+      } catch (e) {
+        print(e);
+      }
+    } else {
+      print('Form Invalidate');
+    }
+  }
+
   static String validateEmail(String value) {
     Pattern pattern =
         r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
